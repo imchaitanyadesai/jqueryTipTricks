@@ -20,11 +20,11 @@ var pool = mysql.createPool({
 
     host: 'localhost',
 
-    user: 'EezyBeeUser1',
+    user: 'user',
 
-    password: 'EezyBeeUser1!',
+    password: '*****',
 
-    database: 'eezybee'
+    database: 'database_name'
 
 });
 function init() {

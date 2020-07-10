@@ -32,7 +32,7 @@ var pool = mysql.createPool({
 
 var users = [];
 
-var FCM_SERVER_KEY = "AIzaSyA8J1mpq2YLSLs9zRrE-GaZa2SVmB9P7wA";
+var FCM_SERVER_KEY = "***************************";
 var SUCCESS = "success";
 var FAILED = "failed";
 
@@ -147,9 +147,9 @@ io.on('connection', function (client) {
                         }
 
                         if(data.message_type == 'IMAGE'){
-                            messageType = 'PEAK_IMAGE';
+                            messageType = 'IMAGE';
                         }else if(data.message_type == 'VIDEO'){
-                            messageType = 'PEAK_VIDEO'; 
+                            messageType = 'VIDEO'; 
                         }
 
                         executeQuery(updateLastMessage, [messageType], function (err, result1, fields) {
@@ -410,9 +410,9 @@ io.on('connection', function (client) {
                                 if(userResult1[0].device_type == 1){
                                     var options = {
                                         token: {
-                                            key: "../PushNotificationKey/AuthKey_8MBQDVN8PW.p8",
-                                            keyId: "8MBQDVN8PW",
-                                            teamId: "2HGNKSHWWK"
+                                            key: "../PushNotificationKey/something.p8",
+                                            keyId: "******",
+                                            teamId: "*******"
                                         },
                                         production: true //false
                                     };
